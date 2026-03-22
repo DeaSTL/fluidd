@@ -1,11 +1,3 @@
-<<<<<<< Updated upstream
-ARG BASE_IMAGE=nginx:alpine
-
-FROM $BASE_IMAGE
-
-COPY /dist /usr/share/nginx/html
-COPY /server/nginx /etc/nginx/templates
-=======
 # Build stage
 FROM node:24-alpine AS builder
 
@@ -41,4 +33,3 @@ COPY --from=builder /app/server/nginx /etc/nginx/templates
 EXPOSE $PORT
 
 CMD ["nginx", "-g", "daemon off;"]
->>>>>>> Stashed changes
