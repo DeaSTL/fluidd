@@ -16,6 +16,7 @@ import Settings from '@/views/Settings.vue'
 import AppSettingsNav from '@/components/layout/AppSettingsNav.vue'
 import MacroCategorySettings from '@/components/settings/macros/MacroCategorySettings.vue'
 import FullscreenCamera from '@/views/FullscreenCamera.vue'
+import Cameras from '@/views/Cameras.vue'
 import NotFound from '@/views/NotFound.vue'
 import Login from '@/views/Login.vue'
 import Icons from '@/views/Icons.vue'
@@ -136,6 +137,12 @@ const routes: Array<RouteConfig> = [
     path: '/camera/:cameraId',
     name: 'camera',
     component: FullscreenCamera,
+    ...defaultRouteConfig
+  },
+  {
+    path: '/cameras',
+    name: 'cameras',
+    component: Cameras,
     ...defaultRouteConfig
   },
   {

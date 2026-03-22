@@ -26,6 +26,7 @@ import type { sensors } from './sensors'
 import type { database } from './database'
 import type { analysis } from './analysis'
 import type { afc } from './afc'
+import type { customCameras } from './customCameras'
 import type { storeOptions } from '.'
 
 type RootModulesType = {
@@ -55,7 +56,8 @@ type RootModulesType = {
   sensors: typeof sensors,
   database: typeof database,
   analysis: typeof analysis,
-  afc: typeof afc
+  afc: typeof afc,
+  customCameras: typeof customCameras
 }
 
 type RootStateType = {

@@ -99,6 +99,13 @@
           </app-nav-item>
 
           <app-nav-item
+            icon="$camera"
+            to="cameras"
+          >
+            {{ $t('app.general.title.cameras') }}
+          </app-nav-item>
+
+          <app-nav-item
             icon="$desktopTower"
             to="system"
           >

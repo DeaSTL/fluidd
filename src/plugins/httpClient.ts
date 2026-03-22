@@ -10,6 +10,7 @@ const createHttpClient = (store: Store<RootState>) => {
   // Create a base instance with sane defaults.
   const httpClient = axios.create({
     withAuth: true,
+    withCredentials: true,
     timeout: Globals.NETWORK_REQUEST_TIMEOUT
   })
 

@@ -235,10 +235,14 @@ app:
       abort: Abort
       accept: Accept
       add: Add
+      add_camera: Add Camera
       add_dir: Add Directory
       add_file: Add File
+      add_first_camera: Add Your First Camera
       add_printer: Add printer
       add_to_queue: Add to Queue
+      disable: Disable
+      enable: Enable
       adjust_layout: Adjust dashboard layout
       adjusted: Adjusted
       all: All
@@ -335,6 +339,14 @@ app:
       actual_time: Actual
       add_camera: Add Camera
       add_filter: Add Filter
+      camera_type: Camera Type
+      stream_url: Stream URL
+      printer_association: Printer Association (Optional)
+      printer_association_hint: Link this camera to a specific printer
+      flip_horizontal: Flip Horizontal
+      flip_vertical: Flip Vertical
+      rotation: Rotation
+      enabled: Enabled
       add_preset: Add Preset
       add_user: Add user
       all: All
@@ -486,10 +498,13 @@ app:
         invalid_aspect: Invalid Aspect Ratio
       msg:
         confirm: Are you sure?
+        confirm_camera_delete: Are you sure you want to delete this camera?
         confirm_cancel_print: Are you sure you want to cancel the current print?
         confirm_change_beacon_model: The printer is currently busy. Are you sure you want to change the beacon model?
         confirm_clear_mesh: The printer is currently busy. Are you sure you want to clear the bed mesh?
         confirm_delete: Are you sure? This will delete the selected item. | Are you sure? This will delete the {count} selected items.
+        no_cameras: No cameras configured yet
+        camera_disabled: Camera is disabled
         confirm_emergency_stop: Are you sure you want to emergency stop the printer?
         confirm_exclude_object: Are you sure you want to exclude this object from printing?
         confirm_forcemove_toggle: Are you sure? This can damage the printer.
@@ -555,6 +570,9 @@ app:
       bedmesh: Bed Mesh
       bedmesh_controls: Bed Mesh Controls
       camera: Camera | Cameras
+      cameras: Cameras
+      add_camera: Add Camera
+      edit_camera: Edit Camera
       config_files: Configuration Files
       configure: Configuration
       console: Console
